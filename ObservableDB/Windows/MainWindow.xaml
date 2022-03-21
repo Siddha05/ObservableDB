@@ -57,7 +57,7 @@
                 <StackPanel Orientation="Vertical" Margin="0,5">
                     <Button Content="+10000" Margin="2,2,2,2" Command="{Binding Path=TestAddCmd}" ToolTip="Добавить 10000 записей в одной транзакции"/>
                     <Button Content="Truncate" Margin="2" Command="{Binding Path=TestTruncateCmd}" ToolTip="Очистить таблицу"/>
-                    <Button Content="EditFlag" Margin="2" Command="{Binding Path=TestEditCmd}" ToolTip="Изменить поле flag для всех записей"/>
+                    <Button Content="EditFlag" Margin="2" Command="{Binding Path=TestEditCmd}" ToolTip="Изменить поле flag на false для всех записей"/>
                 </StackPanel>
             </GroupBox>
         </StackPanel>
