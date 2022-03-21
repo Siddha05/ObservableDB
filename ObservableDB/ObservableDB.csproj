@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Scripts\AddScript.sql" />
+    <None Remove="Scripts\EditScript.sql" />
+    <None Remove="Scripts\TruncateScript.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\AddScript.sql" />
+    <EmbeddedResource Include="Scripts\EditScript.sql" />
+    <EmbeddedResource Include="Scripts\TruncateScript.sql" />
+  </ItemGroup>
+
+</Project>
